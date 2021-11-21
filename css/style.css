@@ -1,0 +1,165 @@
+
+/* Golobal-styles */
+@font-face {
+    font-family: 'Shippori';
+    src: url("../fonts/ShipporiAntique-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-width: 1069px;
+}
+/* header */
+.header{
+    padding: 50px 0;
+    background: #900;
+
+}
+.header-wrap{
+    width: 1069px;
+    margin: 0 auto;
+}
+.logo{
+    font-size: 35px;
+    font-family: 'Estonia', cursive;
+    color: #FFF;
+    display: inline-block;
+    margin-right: 10%;
+}
+.menu{
+    display: inline-block;
+    width: 625px;
+   margin-right: auto;
+  
+}
+.menu-item{
+    display: inline-block;
+}
+.menu-item::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: 0.4s;
+}
+.menu-item:hover::after{
+    transform: scaleX(1);
+}
+.menu-link{
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.menu-link:focus{
+    outline: none;
+}
+.header-btn{
+    display: block;
+    width: 100px;
+    height: 50px;
+   
+    border:none;
+    color: #900;
+    border-radius: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    transition: 0.3s;
+    display: inline-block;
+   margin-left: 10%;
+}
+.header-btn:hover,
+.header-btn:focus{
+background: #999;
+outline: none;
+}
+/* text-block */
+.main-title{
+    font-family: 'Estonia', cursive;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #900;
+}
+.paragraf{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.paragraf::first-letter{
+    font-size: 25px;
+    color: #900;
+}
+
+.sub-title{
+    text-transform: uppercase;
+    font-family: 'Shippori', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #900;
+    margin-bottom: 50px;
+}
+
+.text-block{
+    width: 600px;
+    margin: 150px auto;
+    border: 2px solid #222;
+    padding: 50px;
+}
+/* footer */
+.footer{
+    padding: 100px 0;
+    background: linear-gradient(#900,#222);
+    
+}
+.footer-content{
+    padding: 40px;
+    width: 500px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+    font-size: 25px;
+    border: 5px solid #FFF;
+    transition: 0.3s;
+}
+.footer-content:hover{
+    border: 5px solid #888;
+    color: #888;
+}
+.footer-buttons{
+    width: 398px;
+    margin:50px auto
+}
+.footer-btn{
+    width: 100px;
+    height: 50px;
+    margin-right: 15px;
+    margin-left:15px;
+    border:none;
+    color: #900;
+    border-radius: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.footer-btn:hover,
+.footer-btn:focus{
+background: #999;
+outline: none;
+}
+/* copyright */
+.copyright{
+    width: 224px;
+    margin: 25px auto;
+    color: #FFF;
+    font-size: 35px;
+    font-family: 'Estonia', cursive;
+    text-decoration:overline;
+}

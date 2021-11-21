@@ -1,8 +1,8 @@
 
-/* Golobal-styles */
+/* Global-styles */
 @font-face {
-    font-family: 'Shippori';
-    src: url("../fonts/ShipporiAntique-Regular.ttf");
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Medium.ttf");
 }
 
 *{
@@ -12,12 +12,12 @@
 }
 body{
     min-width: 1069px;
+    font-family: 'Open Sans', sans-serif;
 }
 /* header */
 .header{
     padding: 50px 0;
     background: #900;
-
 }
 .header-wrap{
     width: 1069px;
@@ -70,7 +70,6 @@ body{
     border:none;
     color: #900;
     border-radius: 25px;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     transition: 0.3s;
     display: inline-block;
@@ -89,7 +88,6 @@ outline: none;
     color: #900;
 }
 .paragraf{
-    font-family: 'Open Sans', sans-serif;
     margin-bottom: 20px;
     font-weight: 400;
 }
@@ -98,18 +96,27 @@ outline: none;
     color: #900;
 }
 
-.sub-title{
-    text-transform: uppercase;
-    font-family: 'Shippori', sans-serif;
+.up-title{
+    text-transform:capitalize;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    text-align: center;
+    width: 300px;
+    margin: 50px auto;
     color: #900;
-    margin-bottom: 50px;
 }
 
+.up-title::after{
+content: '';
+display: block;
+width: 65%;
+height: 2px;
+margin: 15px 17.5% 25px;
+background: #900;
+
+}
 .text-block{
     width: 600px;
-    margin: 150px auto;
+    margin: 0px auto 150px;
     border: 2px solid #222;
     padding: 50px;
 }
@@ -134,7 +141,7 @@ outline: none;
     color: #888;
 }
 .footer-buttons{
-    width: 398px;
+    width: 400px;
     margin:50px auto
 }
 .footer-btn{
